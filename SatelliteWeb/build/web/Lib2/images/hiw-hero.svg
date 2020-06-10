@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="856px" viewBox="0 0 1440 856" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2 + Path 3 Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="1.72254642e-14%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1BCEDF" offset="0%"></stop>
+            <stop stop-color="#3CC7B1" offset="53.0374907%"></stop>
+            <stop stop-color="#4DC399" offset="79.8153418%"></stop>
+            <stop stop-color="#5AC088" offset="100%"></stop>
+        </linearGradient>
+        <path d="M149.84467,922.536548 C262.501884,799.835287 399.162467,738.994679 559.826418,740.014724 C800.822344,741.544792 1134.07628,863.787033 1455.30387,604.45579 C1669.45561,431.568295 1770.80052,318.283753 1759.33861,264.602164 L1646.71029,0 L1031.2761,7.07401486 L0,16.4023301 L149.84467,922.536548 Z" id="path-2"></path>
+    </defs>
+    <g id="02---How-It-Works" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hero" transform="translate(-160.000000, -56.000000)">
+            <g id="Path-2-+-Path-3-Mask">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <path d="M138.810695,727.261094 C142.972722,727.261094 74.5248321,396.248528 349.355916,308.281085 C532.576639,249.636122 654.458,107.010408 715,-119.596058 L-91.5796687,-134 C-96.422945,502.061824 -93.9973841,818.968217 -84.3029861,816.719179 C-69.7613891,813.345623 134.648667,727.261094 138.810695,727.261094 Z" id="Path-2" fill="#FFFFFF" opacity="0.1" mask="url(#mask-3)"></path>
+                <path d="M830.410363,895.233834 C802.925032,720.951728 890.442668,601.2807 1092.96327,536.22075 C1396.74418,438.630826 1654.65648,507.282698 1651.21232,288.276126 C1648.91621,142.271744 1689.21844,277.706957 1772.11901,694.581762 L1205.73028,1046.16518 L830.410363,895.233834 Z" id="Path-3" fill="#FFFFFF" opacity="0.1" mask="url(#mask-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
