@@ -1,4 +1,3 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.Date"%>
 <!DOCTYPE html>
@@ -20,9 +19,8 @@
                             <div class="col-md-5 ml-auto">
                                 <h2 style="color:yellow;"  class="footer-heading mb-4">Nearest Update</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="" class="smoothscroll">2.0.060620 Releast: 1|GUI</a></li>
-                                    <li><a href="" class="smoothscroll">1.0.261219 Fix rool effects</a></li>
-                                    <li><a href="" class="smoothscroll">1.0.120919 Add some fx for hidden content</a></li>
+                                    <li><a href="" class="smoothscroll">2.0.200620 Alpha</a></li>
+                                    <li><a href="" class="smoothscroll">2.0.060620 Releast: Test</a></li>
                                     <li><a href="" class="smoothscroll">1.0.0 Releast: Demo</a></li>
                                 </ul>
                             </div>
@@ -49,7 +47,7 @@
             </div>
             <% Date d=new Date();%>
             <p style="margin-bottom: 0px;padding-bottom: 0px;display: inline-block; color:white;background-color:black;font-size: 22px"> <%=d%></p>
-            <p style="margin-bottom: 0px;padding-bottom: 0px;display: inline-block; color:white;position: absolute;right:0px; background-color:black;font-size: 22px;text-align: right;"> Satellite | satellite1012</p>
+            <p style="margin-bottom: 0px;padding-bottom: 0px;display: inline-block; color:white;position: absolute;right:0px; background-color:black;font-size: 22px;text-align: right;"> Latest Update: 11/06/20</p>
         </footer>     
         
        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
@@ -69,7 +67,6 @@
     <script src="Lib2/js/jquery.animateNumber.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="Lib2/js/google-map.js"></script>
-    <script src="Lib2/js/main.js"></script>
-    
+    <script src="Lib2/js/main.js"></script>    
     </body>
 </html>

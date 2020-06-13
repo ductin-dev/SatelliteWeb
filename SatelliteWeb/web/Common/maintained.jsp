@@ -18,8 +18,14 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-11">
-              <h2 class="heading mb-5">Sorry, but system is under maintained!</h2>
-              <h5 class="heading mb-5" style="color:orangered;font-size:35px;">This feature will be available soon</h5>
+                <br><br><br><br><br><br><br>
+                <h2 class="heading mb-5">Sorry, but system is under maintained!</h2>
+                <h5 class="heading mb-5" style="color:orangered;font-size:35px;">This feature will be available soon</h5>
+                <br><br><br><br><br>
+                <p style="color:white;font-size:20px;margin:0px;">More</p>
+                <a href="#contact-section">         
+                <span class=" icon-keyboard_arrow_down" style="size: 88px;font-size:88px;"></span>
+                </a>
             </div>
           </div>
         </div>

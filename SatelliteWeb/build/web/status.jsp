@@ -1,12 +1,18 @@
+<%@page import="java.awt.Desktop.Action"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Satellite | Status</title>
-    </head>
+        <script>
+            function details(s){
+                alert(s);
+            }
+        </script>
+    </head>    
     <body>
-       <jsp:include page="Common/header1.jsp" />
+       <jsp:include page="Common/header.jsp" />
 
         <div class="block-31" style="position: relative;">
         <div class="owl-carousel loop-block-31 ">
@@ -18,9 +24,13 @@
             <%
             Object header = request.getAttribute("statusHeader");
             Object detail = request.getAttribute("statusDetail");
+            System.out.println(detail);
             Object statusColor = request.getAttribute("statusColor");
-            out.println("<h2 class=\"heading mb-5\" style=\"color:"+statusColor+";\">"+header+"</h2>"
-                    + "<h5 class=\"heading mb-5\" style=\"font-size:35px;\">"+detail+"</h5>");
+            out.println("<h2 class=\"heading mb-5\" style=\"color:"+statusColor+";\">"+header+"</h2>");  
+            out.println("<div class=\"btn-group\">");
+            if (detail.toString().indexOf(":")>=0){
+            out.println("<button onclick=\"alert('"+detail.toString().substring(0,detail.toString().indexOf(":"))+"')\" class=\"btn btn-warning\" style=\"background-color: orange;color:white;\">Detail</button></div>");
+            }
             %>
             </div>
           </div>

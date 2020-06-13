@@ -6,25 +6,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Satellite Blog</title>
+    <title>Satellite | Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+        window.onload=function(){          
+            <% DatabaseInfo.countAccess++; %>
+        };
+    </script>    
+    
   </head>
   <body>
-  <jsp:include page="Common/user.jsp" />
-  <jsp:include page="Common/header1.jsp" />
+  <jsp:include page="Common/header.jsp" />
  
   <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
-      <div class="block-30 block-30-sm item" style="background-image: url('img/background.jpg');" data-stellar-background-ratio="0.5">
+      <div class="block-30 block-30-sm item" style="background-image: url('img/background.jpg');" data-stellar-background-ratio="0.9">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
-            <div class="col-md-7">
+            <div class="col-md-8">
+              <br><br><br><br><br><br><br>
               <h2 class="heading mb-5">Welcome to our website</h2>
-              <p style="display: inline-block;"><a href="https://www.youtube.com/watch?v=_tgyMkwjInU"  data-fancybox class="ftco-play-video d-flex"><span class="play-icon-wrap align-self-center mr-4" ><span class="ion-ios-play"style="color: orangered;"></span></span> <span class="align-self-center" style="color: white;">Start</span></a></p>
+              <p style="display: inline-block;"><a href="about.jsp" >
+                      <span class="play-icon-wrap align-self-center mr-4" >
+                          <span class="ion-ios-play"style="color: orangered;">
+                          </span></span> 
+                      <span class="align-self-center" style="color: white;">Hướng dẫn truy cập tài liệu</span></a>         
+              </p>
+              <br><br><br><br><br><br><br>
+              <p style="color:white;font-size:20px;margin:0px;">More</p>
+              <a href="#contact-section">         
+            <span class=" icon-keyboard_arrow_down" style="size: 88px;font-size:88px;"></span>
+            </a>
             </div>
-          </div>
-        </div>
+          </div>       
+        </div> 
+          
       </div>
     </div>
   </div>
@@ -35,7 +52,9 @@
         <div class="col-md-5 pr-5" style="background-color: orangered;">
           <div class="block-48" style="background-color: orangered;font-family: arial;" >
               <span class="block-48-text-1" style="color:yellow;text-shadow:1px 1px black;">Số lượt truy cập</span>
-              <div class="block-48-counter ftco-number" data-number="25" style="color:yellow;">0</div>
+              <%
+                  out.println("<div class=\"block-48-counter ftco-number\" data-number=\""+DatabaseInfo.countAccess+"\" style=\"color:yellow;\">0</div>");
+              %>
               <span class="block-48-text-1 mb-4 d-block" style="color:yellow;text-shadow:1px 1px black;">Trong tổng thời gian <p>N/A</p></span>
               <p class="mb-0"><a href="#contact-section" class="btn btn-white px-3 py-2">Liên Hệ Admin Ngay<a></p>
             </div>

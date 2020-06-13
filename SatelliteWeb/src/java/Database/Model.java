@@ -40,7 +40,8 @@ public class Model extends DatabaseInfo {
             String b = rs.getString(2);
             String c = rs.getString(3);
             int d = Integer.valueOf(rs.getString(4));
-            arr.add(new User(a, b, c, d));
+            String e = rs.getString(5);
+            arr.add(new User(a, b, c, d, e));
 
         }
         //Return

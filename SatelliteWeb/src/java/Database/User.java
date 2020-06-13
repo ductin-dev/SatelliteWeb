@@ -7,12 +7,22 @@ public class User {
     private String uName;
     private String uPass;
     private int uRole;
+    private String uDigitalName;
 
-    public User(int uNo, String uName, String uPass, int uRole) {
+    public String getuDigitalName() {
+        return uDigitalName;
+    }
+
+    public void setuDigitalName(String uDigitalName) {
+        this.uDigitalName = uDigitalName;
+    }
+
+    public User(int uNo, String uName, String uPass, int uRole, String uDi) {
         this.uNo = uNo;
         this.uName = uName;
         this.uPass = uPass;
         this.uRole = uRole;
+        this.uDigitalName = uDi;
     }
 
     public int getuNo() {

@@ -310,11 +310,11 @@ my_element.scrollIntoView({
 });
 
 function nav_change(s){
-    document.getElementById("nav-item-home").class="nav-item";
-    document.getElementById("nav-item-document").class="nav-item";
-    document.getElementById("nav-item-project").class="nav-item";
-    document.getElementById("nav-item-blog").class="nav-item";
-    document.getElementById("nav-item-about").class="nav-item";
-    document.getElementById("nav-item-team").class="nav-item";
-    document.getElementById(s).class="nav-item active";
+    document.getElementById("nav-item-home").classList.remove('active');
+    document.getElementById("nav-item-document").classList.remove('active');
+    document.getElementById("nav-item-project").classList.remove('active');
+    document.getElementById("nav-item-blog").classList.remove('active');
+    document.getElementById("nav-item-about").classList.remove('active');
+    document.getElementById("nav-item-team").classList.remove('active');
+    document.getElementById(s).classList.add('active');
 }

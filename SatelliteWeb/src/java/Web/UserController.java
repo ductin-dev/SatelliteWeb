@@ -22,7 +22,10 @@ public class UserController extends HttpServlet {
         String action = request.getParameter("action");
         switch (action) {
             case "loginAction":
-                controller.find(request, response);
+                controller.login(request, response);
+                break;
+            case "logoutAction":
+                controller.logout(request, response);
                 break;
         }
     }
