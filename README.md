@@ -1,2 +1,2 @@
 # SatelliteWeb
- Web nhóm chơi
+JSP and Java, Pre-Release version of Satdevelop
